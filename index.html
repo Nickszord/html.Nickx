@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ,<link rel="stylesheet" href="style.css">
     <title>Portal Dev</title>
 </head>
 
@@ -31,8 +32,11 @@
         <h2>Cadastro de Dev</h2>
 
         <form action="" method="post">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
+            <fieldset class = "Dados Pessoais">
+            </fieldset>
+
+            <fieldset class = "dados-profissionais">
+            </fieldset>
 
                 <div>
                     <label for="">Nome: *</label>
@@ -51,6 +55,8 @@
 
                 <div>
                     <p>Informe sua especialização</p>
+
+                    <div>
                     <div>
                         <input type="radio" name="especializacao" id="fullstack" value="fullstack">
                         <label for="fullstack"> Fullstack</label>
@@ -64,7 +70,9 @@
                         <label for="front-en"> front-en</label>
                     </div>
 
-                    <div>
+                     </div>
+
+                    <div class="experiencia">
                         <label for="exoeriencia">informe sua experiencia</label>
                         <select name="experiencia" id="experiencia">
                             <option value="selected"> Selecione uma opcão</option>
@@ -92,7 +100,7 @@
                 </div>
             </fieldset>
 
-            <div>
+            <div class="form-botoes">
                 <input type="reset" value=" Limpar"/>
                 <input type="submit" value="Cadastrar"/>
             </div>
